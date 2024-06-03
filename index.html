@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="signin-container">
+        <h2>Sign In</h2>
+        <form id="signinForm">
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="username" name="username" placeholder="Username or Email">
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Password">
+                <i class="fas fa-eye toggle-password" id="togglePassword"></i>
+            </div>
+
+            <div class="options">
+                <label><input type="checkbox" id="rememberMe"> Remember Me</label>
+                <a href="#" id="forgotPassword">Forgot Password?</a>
+
+            </div>
+            <button type="submit">Sign In</button>
+        </form>
+        <div id="message"></div>
+        <div class="separator"><span>or</span></div>
+        <div class="social-signin">
+            <a href="https://www.facebook.com" class="facebook-btn"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://accounts.google.com/signin" class="google-btn"><i class="fab fa-google"></i>  Google</a>
+            <a href="https://github.com/login" class="github-btn"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/login" class="linkedin-btn"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+        </div>
+        <p>Don't have an account? <a href="#">Sign Up</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
